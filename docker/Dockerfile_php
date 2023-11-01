@@ -15,9 +15,9 @@ RUN docker-php-ext-install mysqli pdo_mysql
 # install composer パッケージ管理用プログラム
 COPY --from=public.ecr.aws/docker/library/composer:lts /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www
+WORKDIR /var/www/public
 
 #CMD docker-php-entrypoint php-fpm
 
 #laravelに必要なartisanコマンド
-CMD php artisan serve --host=0.0.0.0 --port=9000 
+CMD php artisan serve --host=0.0.0.0 --port=9000
