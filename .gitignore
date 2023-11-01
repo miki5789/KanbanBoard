@@ -1,0 +1,4 @@
+bbs/*.txt
+bbs/*.csv
+bbs/vendor
+bbs/.env
