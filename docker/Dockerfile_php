@@ -21,3 +21,4 @@ WORKDIR /var/www/public
 
 #laravelに必要なartisanコマンド
 CMD php artisan serve --host=0.0.0.0 --port=9000
+CMD tail -f /dev/null
